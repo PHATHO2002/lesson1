@@ -176,8 +176,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 echo   readNumten($number);
             } else if ($number >= 20 && $number <= 99) {
                 echo readTwoNum($number);
-            } else {
+            } else if ($number >= 100 && $number <= 999) {
                 echo readThreeNum($number);
+            } else {
+                echo 'phải là số có 3 chữ số';
             }
         } else {
             echo "so phai la so nguyen khong am";
