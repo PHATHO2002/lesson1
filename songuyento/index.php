@@ -8,6 +8,7 @@ function is_nguyento($number)
     }
     return true;
 }
+echo "số nguyên tố từ 1 đến 100" . " " . "<br>";
 for ($i = 2; $i < 100; $i++) {
     if (is_nguyento($i)) {
         echo $i . " ";
